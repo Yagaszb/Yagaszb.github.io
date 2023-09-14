@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yagi's Portfolio</title>
+    <title>Portfólió</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .vaporwave-gradient {
+            background: linear-gradient(135deg, #FF6B8C, #673AB7, #482677);
+            /* Egyéb stílusok */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .border-info {
+            border: 2px solid #482677;
+        }
+    </style>
 </head>
-<body>
-    Welcome to my Portfolio!
+
+<body class="vaporwave-gradient">
+    <!-- Gombok -->
+    <div class="buttons-container text-center py-3">
+        <button class="btn btn-primary btn-sm" onclick="scrollToSection('bemutatkozas')">Bemutatkozás</button>
+        <button class="btn btn-primary btn-sm" onclick="scrollToSection('projektek')">Projektek</button>
+        <button class="btn btn-primary btn-sm" onclick="scrollToSection('kapcsolat')">Kapcsolat</button>
+    </div>
+
+    <!-- Bemutatkozás szekció -->
+    <div class="border-info">
+        <section id="bemutatkozas" class="bg-light py-5 text-center d-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="profil_kep.jpg" alt="Profil Kép" class="img-fluid rounded-circle mb-4 border-info">
+                        <!-- Border alkalmazása a képre -->
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-4">Bemutatkozás</h1>
+                        <p class="lead">Üdvözöllek a portfóliómon! Nézd meg a munkáimat és ismerj meg jobban.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Projektek szekció -->
+    <div class="border-info">
+        <section id="projektek" class="bg-white  py-5 d-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="text-center">Projektek</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Kapcsolat szekció -->
+    <div class="border-info">
+        <section id="kapcsolat" class="bg-light py-5 d-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="text-center">Kapcsolat</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JavaScript és Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript a görgetéshez -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
+
 </html>
